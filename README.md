@@ -1,70 +1,111 @@
-# Getting Started with Create React App
+#  BulkMail – Email Blaster App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+BulkMail is a lightweight bulk email sender app built using **React.js**, **Node.js**, **Express**, **MongoDB**, and **Nodemailer**. It allows users to send personalized emails to multiple recipients from an uploaded Excel file.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+##  Features
 
-### `npm start`
+-  Send emails to a list of recipients via Excel file
+-  Upload `.xlsx` files (email list)
+-  Compose subject & message directly
+-  Tracks sent status
+-  View history of sent emails
+-  Delete individual records from history
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🌐 Deployment Links
 
-### `npm test`
+- 🔗 **Frontend**: [https://bulkmail-frontend-neon.vercel.app](https://bulkmail-frontend-neon.vercel.app)  
+- 🔗 **Backend**: [https://bulkmail-backend-pq5l.onrender.com](https://bulkmail-backend-pq5l.onrender.com)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+##  Folder Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+BulkMail/
+├── backend/                      # Node.js + Express API
+│   ├── index.js                  # Main backend server file
+│   ├── models/
+│   │   └── EmailRecord.js        # Mongoose model for email history
+│   └── package.json
+│
+├── frontend/                     # React frontend app
+│   ├── src/
+│   │   ├── MainApp.jsx           # Main email sending UI
+│   │   ├── History.jsx           # Email history page
+│   │   └── App.jsx
+│   └── package.json
+│
+├── screenshots/
+│   ├── send-mail-page.png       # Screenshot of Main UI
+│   └── history-page.png         # Screenshot of history page
+│
+└── README.md                     # Project documentation
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+##  Getting Started
 
-### `npm run eject`
+###  Backend Setup
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+cd backend
+npm install
+node index.js
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+> Make sure your MongoDB connection string and Gmail app password are set correctly.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+###  Frontend Setup
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+cd frontend
+npm install
+npm start
+```
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+##  Screenshots
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+###  Send Mail Page
+![Send Mail Page](./screenshots/send-mail-pages.png)
 
-### Code Splitting
+###  History Page
+![History Page](./screenshots/history-page.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+###  Input Error Page
+![Input Error](./screenshots/input-error-page.png)
 
-### Analyzing the Bundle Size
+### success Page
+![success Page](./screenshots/success-page.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Warning Page
+![Warning Page](./screenshots/delete-warning-page.png)
 
-### Making a Progressive Web App
+###  Deleted Page
+![Deleted Page](./screenshots/deleted-page.png)
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+##  Backend GitHub Repo
 
-### Advanced Configuration
+> GitHub: [https://github.com/Manjushree8/bulkmail-backend](https://github.com/Manjushree8/bulkmail-backend)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+##  Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+**Manjushree Venkatesan**  
+ manjushree0228@gmail.com  
+ [GitHub](https://github.com/Manjushree8)  
+ [LinkedIn](https://www.linkedin.com/in/manjushree-venkatesan-b2b86826b)
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+##  License
+
+This project is for educational/demo purposes. Feel free to fork and customize it.
