@@ -127,7 +127,7 @@ function MainApp() {
 
             <Link to="/history">
               <button className="mt-2 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md">
-                📜 View History
+                 View History
               </button>
             </Link>
           </div>
